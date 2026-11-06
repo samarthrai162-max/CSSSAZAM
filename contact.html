@@ -1,0 +1,221 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Children Senior Secondary School</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="topbar">
+    <p>Children Senior Secondary School | Azamgarh</p>
+</div>
+
+<header class="header">
+
+    <a href="index.html" class="brand">
+        <img src="logo.jpg" alt="School Logo">
+
+        <div class="brand-text">
+            <h2>CHILDREN</h2>
+            <span>SENIOR SECONDARY SCHOOL</span>
+        </div>
+    </a>
+
+    <button
+    class="menu-toggle"
+    id="menu-toggle"
+    aria-label="Open navigation"
+    aria-expanded="false"
+    type="button"
+>
+    <span></span>
+    <span></span>
+    <span></span>
+</button>
+
+    <nav class="navigation" id="navigation">
+        <a href="index.html">Home</a>
+        <a href="admissions.html">Admissions</a>
+        <a href="contact.html" class="active">Contact</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+</header>
+
+<main>
+
+    <section class="inner-hero">
+        <div class="inner-hero-content">
+            <div class="breadcrumb">Home / Contact</div>
+            <h1>Contact Our School</h1>
+            <p>
+                Have questions about admissions, fees or school
+                information? Get in touch with us.
+            </p>
+        </div>
+    </section>
+
+    <section class="page-section contact-intro">
+        <div class="section-heading">
+            <span>WE ARE HERE TO HELP</span>
+            <h2>Get in Touch</h2>
+            <p>
+                Connect with the school office for information
+                and assistance.
+            </p>
+        </div>
+    </section>
+
+    <section class="page-section contact-details">
+
+        <div class="contact-card">
+            <div class="contact-icon">📍</div>
+            <h3>School Address</h3>
+            <p>Azamgarh, Uttar Pradesh, India</p>
+        </div>
+
+        <div class="contact-card">
+            <div class="contact-icon">📞</div>
+            <h3>Phone Number</h3>
+            <p>Contact the school office for the verified number.</p>
+        </div>
+
+        <div class="contact-card">
+            <div class="contact-icon">✉️</div>
+            <h3>Email Address</h3>
+            <p>Contact the school for its official email address.</p>
+        </div>
+
+    </section>
+
+    <section class="page-section contact-main">
+
+        <div class="contact-info">
+            <span>CONTACT INFORMATION</span>
+            <h2>How Can We Help You?</h2>
+
+            <p>
+                Whether you need admission guidance, fee details
+                or general information, the school office can
+                assist you.
+            </p>
+
+            <div class="contact-point">
+                <strong>Admissions</strong>
+                <p>Ask about available classes and admission procedures.</p>
+            </div>
+
+            <div class="contact-point">
+                <strong>Fee Enquiries</strong>
+                <p>Confirm current tuition fees and additional charges.</p>
+            </div>
+
+            <div class="contact-point">
+                <strong>General Enquiries</strong>
+                <p>Get help with school-related questions.</p>
+            </div>
+        </div>
+
+        <div class="contact-form-card">
+            <h2>Send an Enquiry</h2>
+            <p>Fill in the details below to preview the enquiry form.</p>
+
+            <form id="contact-form">
+
+                <label for="parent-name">Your Name</label>
+                <input
+                    type="text"
+                    id="parent-name"
+                    placeholder="Enter your name"
+                    required
+                >
+
+                <label for="email">Email Address</label>
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Enter your email"
+                    required
+                >
+
+                <label for="phone">Phone Number</label>
+                <input
+                    type="tel"
+                    id="phone"
+                    placeholder="Enter your phone number"
+                    required
+                >
+
+                <label for="subject">Enquiry Type</label>
+                <select id="subject" required>
+                    <option value="">Select an option</option>
+                    <option>Admission Enquiry</option>
+                    <option>Fee Enquiry</option>
+                    <option>General Information</option>
+                    <option>Other</option>
+                </select>
+
+                <label for="message">Your Message</label>
+                <textarea
+                    id="message"
+                    rows="4"
+                    placeholder="Write your enquiry..."
+                    required
+                ></textarea>
+
+                <button type="submit" class="form-submit">
+                    Submit Enquiry
+                </button>
+
+                <p class="form-disclaimer">
+                    Demonstration form only. No information is
+                    transmitted or stored.
+                </p>
+
+            </form>
+        </div>
+
+    </section>
+
+    <section class="page-section contact-map-section">
+        <div class="section-heading">
+            <span>FIND US</span>
+            <h2>School Location</h2>
+            <p>Visit the school office for assistance.</p>
+        </div>
+
+        <div class="map-placeholder">
+            <div>
+                <span>📍</span>
+                <h3>Children Senior Secondary School</h3>
+                <p>Azamgarh, Uttar Pradesh</p>
+                <small>Official map location to be verified.</small>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer class="footer">
+    <h3>Children Senior Secondary School</h3>
+    <p>Azamgarh, Uttar Pradesh</p>
+    <p>Website Design Demo by WebCraft</p>
+    <small>Demonstration website — contact details require verification.</small>
+</footer>
+
+<script src="script.js"defer></script>
+
+<script>
+document.getElementById("contact-form").addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    alert("This is a demo form. No enquiry has been sent.");
+});
+</script>
+
+</body>
+</html>

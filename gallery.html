@@ -1,0 +1,188 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Gallery | Children Senior Secondary School</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="topbar">
+    <p>Children Senior Secondary School | Azamgarh</p>
+</div>
+
+<header class="header">
+
+    <a href="index.html" class="brand">
+        <img src="logo.jpg" alt="School Logo">
+
+        <div class="brand-text">
+            <h2>CHILDREN</h2>
+            <span>SENIOR SECONDARY SCHOOL</span>
+        </div>
+    </a>
+
+    <button
+    class="menu-toggle"
+    id="menu-toggle"
+    aria-label="Open navigation"
+    aria-expanded="false"
+    type="button"
+>
+    <span></span>
+    <span></span>
+    <span></span>
+</button>
+
+    <nav class="navigation" id="navigation">
+        <a href="index.html">Home</a>
+        <a href="admissions.html">Admissions</a>
+        <a href="gallery.html" class="active">Gallery</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+</header>
+
+<main>
+
+    <section class="inner-hero">
+        <div class="inner-hero-content">
+            <div class="breadcrumb">Home / Gallery</div>
+            <h1>School Gallery</h1>
+            <p>
+                Explore school events, celebrations,
+                activities and campus moments.
+            </p>
+        </div>
+    </section>
+
+    <section class="page-section gallery-intro">
+        <div class="section-heading">
+            <span>MEMORIES & MOMENTS</span>
+            <h2>Life at Our School</h2>
+            <p>
+                A collection of moments from school life.
+                The images below are illustrative placeholders
+                for this website demonstration.
+            </p>
+        </div>
+    </section>
+
+    <section class="page-section gallery-main">
+
+        <div class="gallery-filters">
+            <button class="gallery-filter active" data-filter="all">All</button>
+            <button class="gallery-filter" data-filter="events">Events</button>
+            <button class="gallery-filter" data-filter="activities">Activities</button>
+            <button class="gallery-filter" data-filter="campus">Campus</button>
+        </div>
+
+        <div class="gallery-grid">
+
+            <div class="gallery-item" data-category="events">
+                <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=900&q=85" alt="Students in a classroom">
+                <div class="gallery-caption">
+                    <span>EVENTS</span>
+                    <h3>School Celebrations</h3>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="activities">
+                <img src="https://images.unsplash.com/photo-1529390079861-591de354faf5?auto=format&fit=crop&w=900&q=85" alt="Students participating in activities">
+                <div class="gallery-caption">
+                    <span>ACTIVITIES</span>
+                    <h3>Student Activities</h3>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="campus">
+                <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&w=900&q=85" alt="School building">
+                <div class="gallery-caption">
+                    <span>CAMPUS</span>
+                    <h3>School Environment</h3>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="events">
+                <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=900&q=85" alt="Students learning together">
+                <div class="gallery-caption">
+                    <span>EVENTS</span>
+                    <h3>School Life</h3>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="activities">
+                <img src="https://images.unsplash.com/photo-1472162072942-cd5147eb3902?auto=format&fit=crop&w=900&q=85" alt="Outdoor student activity">
+                <div class="gallery-caption">
+                    <span>ACTIVITIES</span>
+                    <h3>Outdoor Activities</h3>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="campus">
+                <img src="https://images.unsplash.com/photo-1498243691581-b145c3f54a5a?auto=format&fit=crop&w=900&q=85" alt="Learning space">
+                <div class="gallery-caption">
+                    <span>CAMPUS</span>
+                    <h3>Learning Spaces</h3>
+                </div>
+            </div>
+
+        </div>
+
+        <p class="gallery-disclaimer">
+            Demo images only. Actual school photographs and event
+            details should be added with the school's approval.
+        </p>
+
+    </section>
+
+    <section class="page-section gallery-cta">
+        <h2>Want to Know More About Our School?</h2>
+        <p>Explore admission information and class-wise fee details.</p>
+        <a href="admissions.html">Explore Admissions →</a>
+    </section>
+
+</main>
+
+<footer class="footer">
+    <h3>Children Senior Secondary School</h3>
+    <p>Azamgarh, Uttar Pradesh</p>
+    <p>Website Design Demo by WebCraft</p>
+    <small>Demonstration website — images are illustrative placeholders.</small>
+</footer>
+
+<script src="script.js"defer></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const filters = document.querySelectorAll(".gallery-filter");
+    const items = document.querySelectorAll(".gallery-item");
+
+    filters.forEach(function (button) {
+        button.addEventListener("click", function () {
+            const selected = this.dataset.filter;
+
+            filters.forEach(function (filter) {
+                filter.classList.remove("active");
+            });
+
+            this.classList.add("active");
+
+            items.forEach(function (item) {
+                const category = item.dataset.category;
+
+                item.style.display =
+                    selected === "all" || selected === category
+                    ? ""
+                    : "none";
+            });
+        });
+    });
+});
+</script>
+
+</body>
+</html>
