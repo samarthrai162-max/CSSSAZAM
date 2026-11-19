@@ -16,10 +16,11 @@
 
     <link rel="stylesheet" href="style.css">
 
-    <script src="script.js" defer></script>
+    
 </head>
 
 <body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
 
 <!-- TOP BAR -->
 <div class="topbar">
@@ -39,15 +40,21 @@
         </div>
     </a>
 
-    <button class="menu-toggle" id="menu-toggle"
-        aria-label="Open navigation" aria-expanded="false">
+    <button
+        class="menu-toggle"
+        id="menu-toggle"
+        type="button"
+        aria-label="Open navigation"
+        aria-controls="navigation"
+        aria-expanded="false"
+    >
         <span></span>
         <span></span>
         <span></span>
     </button>
 
-    <nav class="navigation" id="navigation">
-        <a href="index.html" class="active">Home</a>
+    <nav class="navigation" id="navigation" aria-label="Main navigation">
+        <a href="index.html">Home</a>
         <a href="admissions.html">Admissions</a>
         <a href="fees.html">Fee Structure</a>
         <a href="gallery.html">Gallery</a>
@@ -61,7 +68,7 @@
 </header>
 
 <!-- HERO -->
-<main>
+<main id="main-content">
 
 <section class="hero">
 
@@ -374,5 +381,6 @@ src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fi
 
 </footer>
 
+    <script src="script.js" defer></script>
 </body>
 </html>
