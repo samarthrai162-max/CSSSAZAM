@@ -5,9 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fee Structure | Children Senior Secondary School</title>
+    <meta name="theme-color" content="#202638">
+    <meta name="description" content="Explore school information, admissions, fee details and campus life at Children Senior Secondary School, Azamgarh.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
 
 <div class="topbar">
     <p>Children Senior Secondary School | Azamgarh</p>
@@ -24,24 +30,30 @@
         </div>
     </a>
 
-    <button class="menu-toggle" id="menu-toggle"
-        aria-label="Open navigation" aria-expanded="false">
+    <button
+        class="menu-toggle"
+        id="menu-toggle"
+        type="button"
+        aria-label="Open navigation"
+        aria-controls="navigation"
+        aria-expanded="false"
+    >
         <span></span>
         <span></span>
         <span></span>
     </button>
 
-    <nav class="navigation" id="navigation">
+    <nav class="navigation" id="navigation" aria-label="Main navigation">
         <a href="index.html">Home</a>
         <a href="admissions.html">Admissions</a>
-        <a href="fees.html" class="active">Fee Structure</a>
+        <a href="fees.html">Fee Structure</a>
         <a href="gallery.html">Gallery</a>
         <a href="contact.html">Contact</a>
     </nav>
 
 </header>
 
-<main>
+<main id="main-content">
 
     <section class="inner-hero">
         <div class="inner-hero-content">
@@ -185,6 +197,7 @@
     <small>Demonstration website — information subject to school confirmation.</small>
 </footer>
 
-<script src="script.js"defer></script>
+
+    <script src="script.js" defer></script>
 </body>
 </html>
